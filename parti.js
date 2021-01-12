@@ -2,7 +2,7 @@ class parti{
     constructor(x,y,radius){
          var options={
             
-          restitution:0.1    
+          restitution:0.6    
            } 
            this.body=Bodies.circle(x,y,radius,options);
             this.x=x; 
