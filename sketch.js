@@ -60,8 +60,8 @@ function draw() {
 if(frameCount%60===0){
 par.push(new parti(random(50,350),10,10))
   }
-for(var j= 0; j<particles.length; j++){
- particles[j].display();
+for(var j= 0; j<par.length; j++){
+ par[j].display();
 }
   ground.display();
 division1.display();
@@ -101,9 +101,6 @@ plinko27.display();
 plinko28.display();
 plinko29.display();
  
-
-  console.log(par.length)
-
 
   drawSprites();
 }
