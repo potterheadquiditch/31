@@ -98,8 +98,10 @@ plinko28.display();
 plinko29.display();
  
 
-for(  var j=0;j%100===0; j++){
+ var j=0;
 
+ j++;
+if( j%100===0;){
     par[j].display();
  }
   console.log(par.length)
