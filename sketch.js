@@ -55,10 +55,14 @@ plinko29=new paper(400,225,10)
 function draw() {
   background(255,255,255);  
   Engine.update(engine);
-for(var k=0; k%50===0; k++){
+ 
+ 
+if(frameCount%60===0){
 par.push(new parti(random(50,350),10,10))
   }
-
+for(var j= 0; j<particles.length; j++){
+ particles[j].display();
+}
   ground.display();
 division1.display();
 division2.display();
@@ -98,12 +102,6 @@ plinko28.display();
 plinko29.display();
  
 
- var j=0;
-
- j++;
-if( j%100===0;){
-    par[j].display();
- }
   console.log(par.length)
 
 
