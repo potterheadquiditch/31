@@ -10,9 +10,7 @@ function setup() {
   var canvas = createCanvas(400,600);
   engine = Engine.create();
   world = engine.world;
-for(var k=0; k%50===0; k++){
-par.push(new parti(random(50,350),10,10))
-  }
+
    ground=new Ground(200,600,400,20)
 division1=new Ground(000,450,20,300)
 division2=new Ground(080,450,20,300)
@@ -57,7 +55,9 @@ plinko29=new paper(400,225,10)
 function draw() {
   background(255,255,255);  
   Engine.update(engine);
-
+for(var k=0; k%50===0; k++){
+par.push(new parti(random(50,350),10,10))
+  }
 
   ground.display();
 division1.display();
