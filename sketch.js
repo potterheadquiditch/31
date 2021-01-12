@@ -1,4 +1,4 @@
-
+ var par=[];
 const Engine = Matter.Engine;
 const World= Matter.World;
 const Bodies = Matter.Bodies;
@@ -56,7 +56,6 @@ function draw() {
   background(255,255,255);  
   Engine.update(engine);
 
-a();
 
   ground.display();
 division1.display();
@@ -95,19 +94,19 @@ plinko26.display();
 plinko27.display();
 plinko28.display();
 plinko29.display();
-
-
-  drawSprites();
-}
-
-function a(){
- 
-  var par=[];
-  if (frameCount%50===0){
+ if (frameCount%50===0){
 par.push(new parti(random(50,350),10,10))
   }
   for(var j=0; j<par.length; j++){
     par[j].display();
   }
   console.log(par.length)
+
+
+  drawSprites();
 }
+
+
+ 
+ 
+ 
