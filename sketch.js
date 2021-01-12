@@ -97,9 +97,11 @@ plinko27.display();
 plinko28.display();
 plinko29.display();
  
-  for(var j=0; j<par.length; j++){
+  var j=0;
+ j++
+ if( j<par.length;){
     par[j].display();
-  }
+ }
   console.log(par.length)
 
 
