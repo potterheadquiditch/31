@@ -10,7 +10,9 @@ function setup() {
   var canvas = createCanvas(400,600);
   engine = Engine.create();
   world = engine.world;
-
+if (frameCount%50===0){
+par.push(new parti(random(50,350),10,10))
+  }
    ground=new Ground(200,600,400,20)
 division1=new Ground(000,450,20,300)
 division2=new Ground(080,450,20,300)
@@ -94,9 +96,7 @@ plinko26.display();
 plinko27.display();
 plinko28.display();
 plinko29.display();
- if (frameCount%50===0){
-par.push(new parti(random(50,350),10,10))
-  }
+ 
   for(var j=0; j<par.length; j++){
     par[j].display();
   }
