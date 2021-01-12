@@ -8,11 +8,12 @@ class parti{
             this.x=x; 
             this.y=y;
             this.radius=radius;
+        this.color=color(random(0,255),random(0,255),random(0,255))
              World.add(world, this.body);
             } display(){
                 var pos=this.body.position;
                 push(); 
-                fill(28,24,24);
+                fill(this.color);
                 translate(pos.x, pos.y);
                 ellipseMode(RADIUS); 
                 ellipse(0,0,this.radius, this.radius);
