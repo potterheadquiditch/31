@@ -10,7 +10,7 @@ function setup() {
   var canvas = createCanvas(400,600);
   engine = Engine.create();
   world = engine.world;
-if (frameCount%50===0){
+for(var k=0; k%50===0; k++){
 par.push(new parti(random(50,350),10,10))
   }
    ground=new Ground(200,600,400,20)
